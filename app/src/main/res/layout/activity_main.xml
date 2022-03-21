@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#0277BD"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLEASE LOGIN"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:translationY="80sp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputs"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:translationY="180sp"
+
+        tools:ignore="ExtraText">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:background="@drawable/round_edit"
+           android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginBottom="30sp"
+            android:width="300sp"
+            android:height="40sp"
+
+        />
+
+        <EditText
+            android:id="@+id/studentNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:width="300sp"
+            android:background="@drawable/round_edit"
+            android:height="40sp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            android:text="Login"
+            android:layout_marginTop="50sp"
+            android:textSize="25sp"
+            android:width="300sp"
+            android:height="60sp"
+            android:textColor="@color/white"
+            android:background="#00223C"
+            android:onClick="loginBtn"
+
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
